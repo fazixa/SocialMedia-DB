@@ -1,0 +1,268 @@
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #231F20;
+	font-size: 20px;
+	background: #fff;
+}
+
+
+
+
+
+.btn {
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #5F9EA0;
+	border: none;
+	border-radius: 5px;
+}
+
+
+
+.sticky {
+
+ 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
+  padding: 50px;
+  font-size: 20px;
+}
+
+.post2 {
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  background: none;
+  border:1px solid #dedede;
+  border-radius: 5px;
+   text-align: left;
+}
+
+.post {
+	padding: 10px;
+	font-size: 15px;
+	color: black;
+	background: none;
+	border:1px solid #dedede;
+	border-radius: 5px;
+	 text-align: left;
+}
+
+.button-post {
+	width: 280px;
+  border: 2px solid #00a8e2;
+  background-color: #00a8e2;
+  text-decoration: none;
+  padding: 0.4rem;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.3rem;
+  color: white;
+  transition: all ease 0.4s;
+}
+
+
+a.button{
+	width: 280px;
+  border: 2px solid #00a8e2;
+  background-color: #00a8e2;
+  text-decoration: none;
+  padding: 0.4rem;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.3rem;
+  color: white;
+  transition: all ease 0.4s;
+}
+
+.button-go {
+	padding-left: 30px;
+
+  border: 2px solid #00a8e2;
+  background-color: #00a8e2;
+  text-decoration: none;
+  padding: 0.4rem;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.3rem;
+  color: white;
+  transition: all ease 0.4s;
+}
+
+.button-user {
+  width: 80px;
+  padding-left: 30px;
+
+  border: 2px solid #00a8e2;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 0.4rem;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.3rem;
+  color: #00a8e2;
+  transition: all ease 0.4s;
+}
+
+
+.selected {
+   background-color: #00a8e2;
+}
+.button-like:active{background-color: #00a8e2;}  
+.button-like:visited{background-color: #00a8e2;} 
+.button-like {
+  border: 2px solid #00a8e2;
+  background-color: white;
+  text-decoration: none;
+  padding: 0.4rem;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.3rem;
+  color: $dark-gray;
+  transition: all ease 0.4s;
+
+  
+}
+
+.liked {
+  background-color: $alert-color;
+  border-color: $alert-color;
+
+}
+
+
+
+
+
+
+
+
+
+
+input[type='texti']{
+    
+    color: #333;
+    width: 280px;
+    height: 70px;
+
+ 
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    transition: box-shadow 320ms;
+
+    box-shadow: 0px 0px 5px 7px rgba(0,0,0,0.1);
+    
+    border-radius: 3px;
+    font-size: 18px;
+    border: 0px;
+}
+
+input[type='texti']:focus {
+
+    outline: 0px;
+    outline-offset: 0px;
+    box-shadow: 0px 0px 1px 5px rgba(0,0,0,0.12);
+}
+
+input:-moz-placeholder {
+    color: #cccccc;
+}
+
+
+
+input[type='textii']{
+    
+    color: #333;
+    width: 200px;
+    height: 32px;
+
+ 
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    transition: box-shadow 100ms;
+
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    
+    border-radius: 3px;
+    font-size: 14px;
+    border: 0px;
+}
+
+input[type='textii']:focus {
+
+    outline: 0px;
+    outline-offset: 0px;
+    box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.12);
+}
+
+input:-moz-placeholder {
+    color: #cccccc;
+}
+
+
+
+
+
+.bodypost{
+    
+    color: #333;
+   
+
+    border-radius: none;
+    font-size: 14px;
+    border: 0px;
+}
+
+
+.in{
+    
+    color: #333;
+    width: 200px;
+    height: 32px;
+
+ 
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    transition: box-shadow 100ms;
+
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    
+    border-radius: 3px;
+    font-size: 14px;
+    border: 0px;
+}
+
+.in:focus {
+
+    outline: 0px;
+    outline-offset: 0px;
+    box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.12);
+}
+
+input:-moz-placeholder {
+    color: #cccccc;
+}

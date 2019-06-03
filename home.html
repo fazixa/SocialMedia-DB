@@ -1,0 +1,81 @@
+<?php
+//session_start();
+include("config.php");
+       $main=new db();
+       $user=$_SESSION['username'];
+if(isset($_POST['follow'])){
+	 
+	    $value=$_POST['follow'];
+	     
+	    $main->following($value,$user);
+}
+if(isset($_POST['submitpost'])){
+	 
+	    $body=$_POST['post'];
+	     
+	    $main->post($body,$user);
+}
+
+?>
+
+
+
+
+<div align="center">
+		<b>login</b>
+	</div></br></br></br>
+	
+	<form method="post" >
+		<table align="center">
+			<tr><td>search:</td><td><input type="text" id="term" name="term"/></td></tr>
+			<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+			<tr><td></td><td><input type="submit" id="search" name="search" value="search" /></td></tr>
+			<tr><td>post:</td><td><input type="text" id="post" name="post"/></td></tr>
+			<tr><td></td><td><input type="submit" id="submitpost" name="submitpost" value="post" /></td>
+			
+		</table>
+		<?php
+		
+        if(isset($_POST['search'])){
+	    $term=$_POST['term'];
+	    $res = $main->search($term);
+		  while ($row = mysqli_fetch_array($res,MYSQLI_BOTH)){?>
+		<input type="submit" id="follow" name="follow" value="<?php print $row['username'];?>" /><br/><br>
+		<?php
+		}
+		}
+		?>
+		
+		
+		<?php
+		
+        
+	    
+	    $re = $main->showposts($user);
+		  while ($r = mysqli_fetch_array($re,MYSQLI_BOTH)){
+		print $r['username'];
+		//$id=$r['id'];
+		?>
+		<input type="text" id="show" name="show" value="<?php print $r['body'];?>" />
+		<input type="submit" id="like" name="like" value="<?php print $r['id'];?>" />
+		<input type="submit" id="comment" name="comment" value="<?php print $r['id'];?>" /><br/><br>
+		<?php
+		 //print $user;
+	  //  print $id;
+		}
+			
+		if(isset($_POST['like'])){ 
+			$postid_like=$_POST['like'];
+			
+			$res = $main->like($user,$postid_like);
+		}	
+		if(isset($_POST['comment'])){ 
+			$postid_comm=$_POST['comment'];
+			$res = $main->opencomments($postid_comm);
+		}
+		?>
+		
+        
+		
+	</form>
+
